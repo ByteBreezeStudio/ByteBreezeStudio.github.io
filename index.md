@@ -9,7 +9,7 @@ title: JUMP ROPE FOREVER
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 0; /* Add this line */
+    margin: 0;
     min-height: 100vh;
   }
 
@@ -20,11 +20,12 @@ title: JUMP ROPE FOREVER
     background-position: center;
     height: 150px;
     overflow: hidden;
-    position: fixed; /* Change this line from relative to fixed */
-    top: 0; /* Add this line */
-    left: 0; /* Add this line */
-    width: 100%; /* Add this line */
-    z-index: 1000; /* Add this line */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: height 0.3s; /* Add this line */
   }
   .page-header h1 {
     color: transparent;
@@ -35,8 +36,8 @@ title: JUMP ROPE FOREVER
   }
 
   .page-content {
-    margin-top: 150px; /* Add this line */
-    padding: 20px; /* Add this line */
+    margin-top: 150px;
+    padding: 20px;
   }
 </style>
 
@@ -47,3 +48,13 @@ title: JUMP ROPE FOREVER
 <div class="page-content">
   This is the homepage of my GitHub Pages site using the Cayman theme.
 </div>
+
+<script>
+  window.addEventListener('scroll', function() {
+    var header = document.querySelector('.page-header');
+    var scrollPos = window.scrollY;
+    var headerHeight = Math.max(150 - scrollPos * 0.5, 50); /* Modify this line */
+
+    header.style.height = headerHeight + 'px';
+  });
+</script>

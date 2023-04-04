@@ -17,13 +17,16 @@ title: JUMP ROPE FOREVER
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 150px 0;
-    margin-bottom: 50px;
-    height: 150px; /* Add this line */
-    overflow: hidden; /* Add this line */
+    height: 150px; /* Updated this line */
+    overflow: hidden;
+    position: relative; /* Add this line */
   }
   .page-header h1 {
     color: transparent;
+    position: absolute; /* Add this line */
+    top: 50%; /* Add this line */
+    left: 50%; /* Add this line */
+    transform: translate(-50%, -50%); /* Add this line */
   }
 </style>
 
@@ -31,11 +34,11 @@ title: JUMP ROPE FOREVER
   <h1>Welcome to my website!</h1>
 </div>
 
-<div class="page-content"> <!-- Add this line -->
+<div class="page-content">
   This is the homepage of my GitHub Pages site using the Cayman theme.
-</div> <!-- Add this line -->
+</div>
 
-<script> // Add the following JavaScript code
+<script>
   window.addEventListener('scroll', function() {
     var header = document.querySelector('.page-header');
     var body = document.querySelector('.page-content');

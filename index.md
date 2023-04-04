@@ -30,10 +30,6 @@ title: JUMP ROPE FOREVER
   }
 </style>
 
-<div class="page-header">
-  <h1>Welcome to my website!</h1>
-</div>
-
 <div class="page-content">
   This is the homepage of my GitHub Pages site using the Cayman theme.
 </div>

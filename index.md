@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 
+title: JUMP ROPE FOREVER
 ---
 
 <style>
@@ -13,7 +13,7 @@ title:
     margin-bottom: 50px;
   }
   .page-header h1 {
-    color: #fff; /* Change this to the desired text color */
+    color: transparent; /* Change this to the desired text color */
   }
 </style>
 

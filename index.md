@@ -1,6 +1,15 @@
 ---
 layout: default
 title: JUMP ROPE FOREVER
+<style>
+body {
+  background-image: url(/Android_Feature_1024x500.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+</style>
+
 ---
 
 # Welcome to my website!

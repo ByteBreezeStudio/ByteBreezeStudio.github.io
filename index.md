@@ -1,19 +1,24 @@
 ---
 layout: default
 title: JUMP ROPE FOREVER
-<style>
-body {
-  background-image: url(/Android_Feature_1024x500.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-</style>
-
 ---
 
-# Welcome to my website!
+<style>
+  .page-header {
+    background-image: url(Android_Feature_1024x500.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px 0;
+    margin-bottom: 50px;
+  }
+  .page-header h1 {
+    color: #fff; /* Change this to the desired text color */
+  }
+</style>
 
-![Background Image](/Android_Feature_1024x500.png)
+<div class="page-header">
+  <h1>Welcome to my website!</h1>
+</div>
 
 This is the homepage of my GitHub Pages site using the Cayman theme.

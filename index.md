@@ -5,12 +5,7 @@ title: JUMP ROPE FOREVER
 
 <style>
   body {
-    background-image: url('/AppFeatures.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     margin: 0;
-    min-height: 100vh;
   }
 
   .page-header {
@@ -35,16 +30,30 @@ title: JUMP ROPE FOREVER
     transform: translate(-50%, -50%);
   }
 
+  .body-background {
+    background-image: url('/AppFeatures.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    z-index: -1; /* Add this line */
+    position: relative; /* Add this line */
+  }
+
   .page-content {
     margin-top: 150px;
     padding: 20px;
-    min-height: 100vh; /* Add this line */
+    min-height: 100vh;
+    position: relative; /* Add this line */
+    z-index: 1; /* Add this line */
   }
 </style>
 
 <div class="page-header">
   <h1>Welcome to my website!</h1>
 </div>
+
+<div class="body-background"></div> <!-- Add this line -->
 
 <div class="page-content">
   This is the homepage of my GitHub Pages site using the Cayman theme.

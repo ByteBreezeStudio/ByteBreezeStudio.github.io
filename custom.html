@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: site.title }} &#8211; {{ site.name | default: site.github.repository_name }}</title>
+  <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    .header {
+      background-color: #1a1a1a;
+      padding: 20px 0;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .header h1 {
+      color: white;
+      font-size: 24px;
+      text-align: center;
+      margin: 0;
+    }
+
+    .header img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      max-height: 100px;
+    }
+
+    .content {
+      margin-top: 150px;
+      padding: 20px;
+    }
+  </style>
+  {{ content }}
+</head>
+
+<body>
+  <header class="header">
+    <h1>{{ site.title }}</h1>
+    <img src="/Android_Feature_1024x500.png" alt="Header Image">
+  </header>
+
+  <div class="content">
+    {{ content }}
+  </div>
+</body>
+
+</html>

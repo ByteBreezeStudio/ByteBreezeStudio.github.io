@@ -6,10 +6,10 @@ title: JUMP ROPE FOREVER
 <style>
   .page-header {
     background-image: url(Android_Feature_1024x500.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 100px 0;
+    padding: 150px 0;
     margin-bottom: 50px;
   }
   .page-header h1 {

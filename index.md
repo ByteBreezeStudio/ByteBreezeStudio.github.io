@@ -9,6 +9,7 @@ title: JUMP ROPE FOREVER
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    min-height: 100vh; 
   }
 
   .page-header {

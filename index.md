@@ -9,6 +9,7 @@ title: JUMP ROPE FOREVER
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    margin: 0; /* Add this line */
     min-height: 100vh;
   }
 
@@ -17,31 +18,32 @@ title: JUMP ROPE FOREVER
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 150px; /* Updated this line */
+    height: 150px;
     overflow: hidden;
-    position: relative; /* Add this line */
+    position: fixed; /* Change this line from relative to fixed */
+    top: 0; /* Add this line */
+    left: 0; /* Add this line */
+    width: 100%; /* Add this line */
+    z-index: 1000; /* Add this line */
   }
   .page-header h1 {
     color: transparent;
-    position: absolute; /* Add this line */
-    top: 50%; /* Add this line */
-    left: 50%; /* Add this line */
-    transform: translate(-50%, -50%); /* Add this line */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .page-content {
+    margin-top: 150px; /* Add this line */
+    padding: 20px; /* Add this line */
   }
 </style>
+
+<div class="page-header">
+  <h1>Welcome to my website!</h1>
+</div>
 
 <div class="page-content">
   This is the homepage of my GitHub Pages site using the Cayman theme.
 </div>
-
-<script>
-  window.addEventListener('scroll', function() {
-    var header = document.querySelector('.page-header');
-    var body = document.querySelector('.page-content');
-    var scrollPos = window.scrollY;
-    var headerHeight = Math.max(150 - scrollPos, 50);
-
-    header.style.height = headerHeight + 'px';
-    body.style.marginTop = headerHeight + 'px';
-  });
-</script>

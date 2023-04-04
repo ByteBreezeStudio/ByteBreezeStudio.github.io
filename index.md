@@ -1,6 +1,5 @@
 ---
 layout: default
-title: JUMP ROPE FOREVER
 ---
 
 <style>

@@ -25,7 +25,7 @@ title: JUMP ROPE FOREVER
     left: 0;
     width: 100%;
     z-index: 1000;
-    transition: height 0.3s; /* Add this line */
+    transition: height 0.3s;
   }
   .page-header h1 {
     color: transparent;
@@ -38,6 +38,7 @@ title: JUMP ROPE FOREVER
   .page-content {
     margin-top: 150px;
     padding: 20px;
+    min-height: 100vh; /* Add this line */
   }
 </style>
 
@@ -53,7 +54,7 @@ title: JUMP ROPE FOREVER
   window.addEventListener('scroll', function() {
     var header = document.querySelector('.page-header');
     var scrollPos = window.scrollY;
-    var headerHeight = Math.max(150 - scrollPos * 0.5, 50); /* Modify this line */
+    var headerHeight = Math.max(150 - scrollPos * 0.5, 50);
 
     header.style.height = headerHeight + 'px';
   });

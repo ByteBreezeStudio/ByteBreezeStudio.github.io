@@ -9,7 +9,7 @@ title: JUMP ROPE FOREVER
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 50px 0;
+    padding: 100px 0;
     margin-bottom: 50px;
   }
   .page-header h1 {

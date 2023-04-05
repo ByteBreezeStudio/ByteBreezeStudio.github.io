@@ -22,6 +22,45 @@ layout: default
   z-index: 0;
 }
 
+  
+  ---
+layout: default
+---
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; /* Adjust this value based on your desired header height */
+  background-image: url('/Android_Feature_1024x500.png');
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.masthead {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.body-wrapper {
+  margin-top: 100px; /* Adjust this value based on your header height */
+  background-image: url('AppFeatures.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  z-index: 0;
+}
+
 .content {
   padding: 2rem;
 }

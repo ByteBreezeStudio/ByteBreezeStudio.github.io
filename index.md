@@ -3,31 +3,6 @@ layout: default
 ---
 
 <style>
-.header-wrapper {
-  position: fixed;
-  width: 100%;
-  background-image: url('/Android_Feature_1024x500.png');
-  background-size: cover;
-  background-position: center;
-  z-index: 1;
-  transition: all 0.3s ease;
-}
-
-.body-wrapper {
-  margin-top: 100px; /* Adjust this value based on your header height */
-  background-image: url('AppFeatures.jpg');
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  z-index: 0;
-}
-
-  
-  ---
-layout: default
----
-
-<style>
 body {
   margin: 0;
   padding: 0;

@@ -14,6 +14,7 @@ body {
   left: 0;
   width: 100%;
   height: 100px; /* Adjust this value based on your desired header height */
+  padding: 50;
   background-image: url('/Android_Feature_1024x500.png');
   background-size: cover;
   background-position: center;

@@ -8,6 +8,7 @@
       margin: 0;
       padding: 0;
       font-family: sans-serif;
+      background-color: navy; /* Set background color to navy blue */
     }
 
     .scroll-header-panel {
@@ -25,6 +26,11 @@
       z-index: 1;
       display: flex;
       justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-container {
+      display: flex;
       align-items: center;
     }
 
@@ -52,11 +58,14 @@
 <body>
   <div class="scroll-header-panel">
     <header class="core-header">
-      <img src="Android_Feature_1024x500.png" alt="Logo"> <!-- Replace 'logo.png' with the path to your logo image -->
-      <a href="privacy-policy.html">Privacy Policy</a> <!-- Replace 'privacy-policy.html' with the path to your privacy policy page -->
+      <div class="logo-container">
+        <img src="Android_Feature_1024x500.png" alt="Logo">
+        <span>Jump Rope Forever</span> <!-- Add text to the right of the logo -->
+      </div>
+      <a href="privacy-policy.html">Privacy Policy</a>
     </header>
     <div class="content">
-      <img src="AppFeatures.jpg" alt="Content Image"> <!-- Replace 'content-image.jpg' with the path to your content image -->
+      <img src="AppFeatures.jpg" alt="Content Image">
       <!-- Add more content here -->
     </div>
   </div>

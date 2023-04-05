@@ -28,7 +28,7 @@ layout: default
 </style>
 
 <div class="header-wrapper">
-  {% include header.html %}
+  {% include masthead.html %}
 </div>
 
 <div class="body-wrapper">

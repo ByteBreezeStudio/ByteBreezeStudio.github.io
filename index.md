@@ -3,6 +3,11 @@ layout: default
 title: JUMP ROPE FOREVER
 ---
 <style>
+   /* Add a scrollable area */
+  .scrollable {
+    overflow: auto;
+    height: 300px;
+  }
   body {
     background-image: url('/AppFeatures.jpg');
     background-size: cover;
@@ -22,8 +27,13 @@ title: JUMP ROPE FOREVER
   }
 </style>
 
-<div class="page-header">
-  <h1>Welcome to my website!</h1>
+<div class="scrollable">
+  <!-- Your content here -->
 </div>
+
+<script>
+  // Add smooth scrolling behavior
+  document.querySelector('.scrollable').style.scrollBehavior = 'smooth';
+</script>
 
 This is the homepage of my GitHub Pages site using the Cayman theme.

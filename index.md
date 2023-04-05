@@ -28,7 +28,16 @@ layout: default
 </style>
 
 <div class="header-wrapper">
-  {% include masthead.html %}
+  <header class="masthead clearfix">
+    <div class="inner">
+      <h3 class="masthead-brand">{{ site.title }}</h3>
+      <nav class="nav nav-masthead">
+        {% for link in site.navigation %}
+          <a class="nav-link {% if page.url == link.url %}active{% endif %}" href="{{ link.url }}">{{ link.title }}</a>
+        {% endfor %}
+      </nav>
+    </div>
+  </header>
 </div>
 
 <div class="body-wrapper">

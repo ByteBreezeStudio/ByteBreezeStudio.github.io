@@ -23,10 +23,27 @@
       color: white;
       padding: 10px;
       z-index: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .core-header img {
+      height: 30px;
+    }
+
+    .core-header a {
+      color: white;
+      text-decoration: none;
     }
 
     .content {
       padding: 10px;
+    }
+
+    .content img {
+      max-width: 100%;
+      height: auto;
     }
   </style>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=Element.prototype.classList,Element.prototype.closest,Element.prototype.matches,Element.prototype.getAttribute"></script>
@@ -35,10 +52,11 @@
 <body>
   <div class="scroll-header-panel">
     <header class="core-header">
-      <h1>Header</h1>
+      <img src="Android_Feature_1024x500.png" alt="Logo"> <!-- Replace 'logo.png' with the path to your logo image -->
+      <a href="privacy-policy.html">Privacy Policy</a> <!-- Replace 'privacy-policy.html' with the path to your privacy policy page -->
     </header>
     <div class="content">
-      <p>Content goes here...</p>
+      <img src="AppFeatures.jpg" alt="Content Image"> <!-- Replace 'content-image.jpg' with the path to your content image -->
       <!-- Add more content here -->
     </div>
   </div>

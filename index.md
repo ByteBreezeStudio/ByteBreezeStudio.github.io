@@ -28,12 +28,10 @@ title: JUMP ROPE FOREVER
 </style>
 
 <div class="scrollable">
- body {
     background-image: url('/AppFeatures.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-  }
 </div>
 
 <script>

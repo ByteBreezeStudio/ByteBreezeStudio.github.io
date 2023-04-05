@@ -2,64 +2,63 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My GitHub Page</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/2.2.10/webcomponents-bundle.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
+    body, html {
       margin: 0;
+      padding: 0;
       font-family: sans-serif;
     }
-    .header {
-      background-color: #ddd;
-      height: 80px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 20px;
+
+    .scroll-header-panel {
       position: relative;
-      z-index: 2;
+      overflow-y: scroll;
+      height: 100vh;
     }
-    .header-logo {
-      max-height: 50px;
-    }
-    .header-nav {
-      display: flex;
-      gap: 20px;
-    }
-    .header-nav a {
-      color: #000;
-      text-decoration: none;
-    }
-    .header-nav a:hover {
-      color: #fff;
-    }
-    .content {
-      background-image: url("AppFeatures.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      height: 2000px;
-      position: relative;
+
+    .core-header {
+      position: sticky;
+      top: 0;
+      background-color: #333;
+      color: white;
+      padding: 10px;
       z-index: 1;
     }
+
+    .content {
+      padding: 10px;
+    }
   </style>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=Element.prototype.classList,Element.prototype.closest,Element.prototype.matches,Element.prototype.getAttribute"></script>
+  <title>GitHub Page with Scroll Header</title>
 </head>
 <body>
-  <core-scroll-header-panel>
-    <div class="header" slot="header">
-      <a href="#" class="header-logo">
-        <img src="Android_Feature_1024x500.png" alt="Logo">
-      </a>
-      <nav class="header-nav">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <a href="path/to/privacy-policy.html">Privacy Policy</a>
-      </nav>
+  <div class="scroll-header-panel">
+    <header class="core-header">
+      <h1>Header</h1>
+    </header>
+    <div class="content">
+      <p>Content goes here...</p>
+      <!-- Add more content here -->
     </div>
-    <div class="content" slot="content">
-      <!-- Content is now an image -->
-    </div>
-  </core-scroll-header-panel>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const scrollHeaderPanel = document.querySelector(".scroll-header-panel");
+
+      scrollHeaderPanel.addEventListener("scroll", function () {
+        const scrollDelta = this.scrollTop - (this.oldScrollTop || 0);
+
+        if (scrollDelta < 0) {
+          this.querySelector(".core-header").style.top = "0";
+        } else {
+          this.querySelector(".core-header").style.top = "-100%";
+        }
+
+        this.oldScrollTop = this.scrollTop;
+      });
+    });
+  </script>
 </body>
 </html>

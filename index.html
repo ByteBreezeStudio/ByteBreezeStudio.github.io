@@ -12,9 +12,9 @@
     /* Add custom styles here */
     body {
       background-color: #000;
-      background-image: url("/AppFeatures.jpg");
+      background-image: url("path/to/background-image.jpg");
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: cover;
       background-position: center;
     }
     .navbar {
@@ -44,7 +44,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="Android_Feature_1024x500.png" alt="Logo">
+        <img src="path/to/logo.png" alt="Logo">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -85,4 +85,5 @@
       };
 
       // Collapse now if page is not at top
-      navbar
+      navbarCollapse();
+      // Collapse the navbar
